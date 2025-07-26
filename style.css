@@ -3,12 +3,14 @@
         }
         .calendar-day {
             transition: all 0.2s ease-in-out;
+            justify-content: center;
         }
         .calendar-day.selected {
             background-color: #3b82f6; /* blue-500 */
             color: white;
             font-weight: bold;
             border-radius: 50%;
+            justify-content: center;
         }
         .calendar-day.not-in-month {
             color: #d1d5db; /* gray-300 */
