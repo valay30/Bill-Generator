@@ -1,0 +1,41 @@
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .calendar-day {
+            transition: all 0.2s ease-in-out;
+            justify-content: center;
+        }
+        .calendar-day.selected {
+            background-color: #3b82f6; /* blue-500 */
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            justify-content: center;
+        }
+        .calendar-day.not-in-month {
+            color: #d1d5db; /* gray-300 */
+        }
+        .calendar-day:not(.not-in-month):not(.day-name):hover {
+            background-color: #dbeafe; /* blue-100 */
+            border-radius: 50%;
+        }
+        /* Custom modal styles */
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 40;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal {
+            position: relative;
+            z-index: 50;
+        }
+        .hidden {
+            display: none;
+        }
